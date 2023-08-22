@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(122, 149, 231, 0.6), rgba(122, 149, 237, 0.6)),url(images/top.png);
+    /*setting up the background image*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
