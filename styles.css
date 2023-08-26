@@ -1,31 +1,73 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'DM Sans', sans-serif;
+
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 100lvh;
     width: 100%;
+    position: relative;
     /*choosing transparency- pick color & chose lighter ver" */
-    background-image: linear-gradient(rgba(125, 171, 255, 0.5), rgba(125, 171, 255, 0.5)),url(images/morning.jpg);
+    background-image: linear-gradient(rgba(31, 31, 54, 0.5), rgba(31, 31, 54, 0.5)),url(images/night.jpg);
     /*setting up the background image*/
     background-position: center;
     background-size: cover;
+    
+
+
+}
+
+/*aligning page links*/
+nav{
+    display: flex;  /*aligns elements*/
+    padding: 2% 5%; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-links{
+    flex: 1; /*takes entire space in row*/
+    text-align: right;
+}
+
+.page-links ul li{
+    list-style: none; /*removing bullet style*/
+    display: inline-block; /* shows horizontal */
+    padding: 5px 18px; /*space between links*/
     position: relative;
 
 }
 
+/*changing ea link color/font/etc*/
+.page-links ul li a{
+    color: #fff;
+    text-decoration: none; /*removing underline*/
+    font-size: 18px;
+}
+
+
 /*intro name setting*/
 .intro{
-    width: 87%;
-    color: #fff;
     position: absolute;
-    margin-left: 8%;
-    margin-top: 22%;
-    transform: translate(-5%,60%);
+    margin-left: 5%;
+    top: 30%;
+    max-width: 550px;
+    
 }
+
 
 /*set font-size of intro*/
 .intro h1{
-    font-size: 55px;
+    color: #fff;
+    font-weight: 530;
+    /*using size: 5vw, size of text same when zoom in*/
+    /*clamp(min bound, curr, upper bound) +1rem for zoom*/
+    font-size: clamp(30px, 5vw + 1rem, 55px);
+  
 }
+
+
+
+
